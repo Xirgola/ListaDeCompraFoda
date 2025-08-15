@@ -54,7 +54,7 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(128, 22);
+            this.lblTitulo.Location = new System.Drawing.Point(128, 61);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(201, 29);
             this.lblTitulo.TabIndex = 1;
@@ -71,10 +71,13 @@
             // 
             // txbProduto
             // 
+            this.txbProduto.BackColor = System.Drawing.Color.White;
+            this.txbProduto.ForeColor = System.Drawing.Color.Black;
             this.txbProduto.Location = new System.Drawing.Point(62, 205);
             this.txbProduto.Name = "txbProduto";
             this.txbProduto.Size = new System.Drawing.Size(172, 22);
             this.txbProduto.TabIndex = 3;
+            this.txbProduto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txbProduto_KeyDown);
             // 
             // btnAdicionar
             // 
@@ -84,12 +87,13 @@
             this.btnAdicionar.TabIndex = 4;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
             // libCompras
             // 
             this.libCompras.FormattingEnabled = true;
             this.libCompras.ItemHeight = 14;
-            this.libCompras.Location = new System.Drawing.Point(350, 131);
+            this.libCompras.Location = new System.Drawing.Point(350, 140);
             this.libCompras.Name = "libCompras";
             this.libCompras.Size = new System.Drawing.Size(381, 256);
             this.libCompras.TabIndex = 5;
@@ -102,6 +106,7 @@
             this.btnExcluir.TabIndex = 6;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnLimpar
             // 
@@ -111,6 +116,7 @@
             this.btnLimpar.TabIndex = 7;
             this.btnLimpar.Text = "Limpar Lista";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // ListaDeCompras
             // 
