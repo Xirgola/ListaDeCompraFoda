@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ListaDeCompraFoda
 {
-    public partial class Form1 : Form
+    public partial class ListaDeCompras : Form
     {
-        public Form1()
+        public ListaDeCompras()
         {
             InitializeComponent();
         }
