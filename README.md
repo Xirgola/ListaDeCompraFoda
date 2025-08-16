@@ -26,7 +26,7 @@ Este é um programa simples desenvolvido em C# com Windows Forms para gerenciame
 
 ## Captura de tela
 
-![Captura do programa](print.jpg)
+![Captura do programa](Print.jpg)
 
 ---
 
